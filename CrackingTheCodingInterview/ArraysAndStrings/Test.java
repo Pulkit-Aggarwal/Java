@@ -17,6 +17,7 @@ public class Test {
         System.out.println("Testing Q1_IsUnique");
         System.out.println("hello = " + Q1_IsUnique.isUnique("hello"));
         System.out.println("world = " + Q1_IsUnique.isUnique("world"));
+
         System.out.println("Testing Q1_IsUnique approach 2");
         System.out.println("hello = " + Q1_IsUnique.isUnique2("hello"));
         System.out.println("world = " + Q1_IsUnique.isUnique2("world"));
@@ -28,6 +29,8 @@ public class Test {
         System.out.println("Testing Q2_CheckPermutation");
         System.out.println("hello, oellh = " + Q2_CheckPermutation.isPermutation("hello", "oellh"));
         System.out.println("hello, world = " + Q2_CheckPermutation.isPermutation("hello", "world"));
+
+        System.out.println("Testing Q2_CheckPermutation approach 2");
         System.out.println("hello, oellh = " + Q2_CheckPermutation.isPermutation2("hello", "oellh"));
         System.out.println("hello, world = " + Q2_CheckPermutation.isPermutation2("hello", "world"));
         System.out.println();
@@ -61,8 +64,7 @@ public class Test {
 
     public static void testQ6() {
         System.out.println("Testing Q6_StringCompression");
-        String test = "aabcccccaaa";
-        System.out.println(test + " = " + Q6_StringCompression.compressed(test));
+        System.out.println("aabcccccaaa" + " = " + Q6_StringCompression.compressed("aabcccccaaa"));
         System.out.println();
     }
     
