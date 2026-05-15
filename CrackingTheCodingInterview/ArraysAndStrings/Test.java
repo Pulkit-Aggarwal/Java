@@ -3,13 +3,17 @@ package ArraysAndStrings;
 public class Test {
 
     public static void main(String[] args) {
+        System.out.println();
         System.out.println("Testing Arrays and Strings");
+        System.out.println();
         testQ1();
         testQ2();
         testQ3();
         testQ4();
         testQ5();
         testQ6();
+        testQ7();
+        testQ8();
     }
 
 
@@ -66,6 +70,48 @@ public class Test {
         System.out.println("Testing Q6_StringCompression");
         System.out.println("aabcccccaaa" + " = " + Q6_StringCompression.compressed("aabcccccaaa"));
         System.out.println();
+    }
+
+
+    public static void testQ7() {
+        System.out.println("Testing Q7_Rotate_Matrix");
+        int[][] matrix = new int[3][3];
+        matrix[0] = new int[]{1, 2, 3};
+        matrix[1] = new int[]{4, 5, 6};
+        matrix[2] = new int[]{7, 8, 9};
+
+        printMatrix(matrix);
+        System.out.println();
+
+        Q7_Rotate_Matrix.rotate(matrix);
+        printMatrix(matrix);
+        System.out.println();
+    }
+
+
+    public static void testQ8() {
+        System.out.println("Testing Q8_Zero_Matrix");
+        int[][] matrix = new int[3][3];
+        matrix[0] = new int[]{1, 2, 3};
+        matrix[1] = new int[]{4, 0, 6};
+        matrix[2] = new int[]{7, 0, 9};
+
+        printMatrix(matrix);
+        System.out.println();
+
+        Q8_Zero_Matrix.getZeroMatrix(matrix);
+        printMatrix(matrix);
+        System.out.println();
+    }
+
+
+    public static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
     
 }

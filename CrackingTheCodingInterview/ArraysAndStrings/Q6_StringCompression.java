@@ -8,15 +8,14 @@ public class Q6_StringCompression {
         }
 
         StringBuilder sb = new StringBuilder();
-        int currentchar = s.charAt(0);
+        char currentchar = s.charAt(0);
         int count = 0;
 
         for (char c : s.toCharArray()) {
             if (c == currentchar) {
                 count++;
             } else {
-                sb.append(currentchar);
-                sb.append(count + "");
+                sb.append(currentchar + "" + count);
                 currentchar = c;
                 count = 1;
             }
