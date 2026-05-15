@@ -1,9 +1,9 @@
-package ArraysAndStrings.Q1;
+package ArraysAndStrings;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class IsUnique {
+public class Q1_IsUnique {
 
     // Add all letters to a set and then check if there are duplicates.
     // Can also check the length of set and string are same but in this
@@ -11,7 +11,7 @@ public class IsUnique {
 
     // Time complexity = O(n) where n is the length of the string
     // Space complexity is O(1) because the set can only contain a maximum of 65535 characters
-    public boolean isUnique(String s) {
+    public static boolean isUnique(String s) {
         Set<Character> letters = new HashSet<Character>();
         for (char c : s.toCharArray()) {
             if (letters.contains(c)) {
@@ -27,7 +27,7 @@ public class IsUnique {
 
     // Time complexity = O(n) where n is the length of the string
     // Space complexity is O(1) because the boolean array can only contain a maximum of 65535 characters
-    public boolean isUnique2(String s) {
+    public static boolean isUnique2(String s) {
         if (s.length() > Character.MAX_VALUE + 1) {
             return false;
         }

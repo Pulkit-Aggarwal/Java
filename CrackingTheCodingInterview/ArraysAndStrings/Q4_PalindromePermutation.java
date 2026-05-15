@@ -1,14 +1,8 @@
-package ArraysAndStrings.Q4;
+package ArraysAndStrings;
 
 import java.util.HashMap;
 
-public class PalindromePermutation {
-    public static void main(String[] args) {
-
-        System.out.println(hasPalindromePermutation("tact coa"));
-        System.out.println(hasPalindromePermutation("hello"));
-
-    }
+public class Q4_PalindromePermutation {
 
     // Time complexity = O(n) where n is the length of the string
     // Space complexity is O(k) where k is the number of distinct characters in string s

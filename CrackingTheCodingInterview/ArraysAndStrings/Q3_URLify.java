@@ -1,13 +1,10 @@
-package ArraysAndStrings.Q3;
+package ArraysAndStrings;
 
 
 // Replaces the spaces in a string with %20 and assumes that 
 // there is enough space at the end of the string to hold the 
 // additional characters
-public class URLify {
-    public static void main(String[] args) {
-        System.out.println(URLCreator("Mr John Smith    ", 13));
-    }
+public class Q3_URLify {
 
     // Time complexity = O(n) where n is the length of the string
     // Space complexity is O(1) because it is done in place

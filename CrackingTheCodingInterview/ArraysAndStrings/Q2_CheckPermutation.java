@@ -1,4 +1,4 @@
-package ArraysAndStrings.Q2;
+package ArraysAndStrings;
 
 import java.util.Arrays;
 
@@ -8,8 +8,8 @@ import java.util.Arrays;
 // Time complexity = O(n) where n is the length of the string
 // Space complexity is O(1) because the count array can only contain a maximum of 
 // 256 characters
-public class CheckPermutation {
-    public boolean isPermutation(String s, String t) {
+public class Q2_CheckPermutation {
+    public static boolean isPermutation(String s, String t) {
         int[] count = new int[256];
         if (s.length() != t.length()) {
             return false;
@@ -38,11 +38,11 @@ public class CheckPermutation {
 
     // Time complexity = O(n log n) where n is the length of the string
     // Space complexity is O(1) because the sort method uses a constant amount of space
-    public boolean isPermutation2(String s, String t) {
+    public static boolean isPermutation2(String s, String t) {
         return sort(s).equals(sort(t));
     }
 
-    public String sort(String s) {
+    public static String sort(String s) {
         char[] array = s.toCharArray();
         Arrays.sort(array);
         return new String(array);
