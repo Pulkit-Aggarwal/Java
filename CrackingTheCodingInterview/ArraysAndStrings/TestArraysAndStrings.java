@@ -1,23 +1,23 @@
 package ArraysAndStrings;
 
-public class Test {
+public class TestArraysAndStrings {
 
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Testing Arrays and Strings");
         System.out.println();
-        testQ1();
-        testQ2();
-        testQ3();
-        testQ4();
-        testQ5();
-        testQ6();
-        testQ7();
-        testQ8();
+        testQ1_IsUnique();
+        testQ2_CheckPermutation();
+        testQ3_URLify();
+        testQ4_PalindromePermutation();
+        testQ5_OneAway();
+        testQ6_StringCompression();
+        testQ7_Rotate_Matrix();
+        testQ8_Zero_Matrix();
     }
 
 
-    public static void testQ1() {
+    public static void testQ1_IsUnique() {
         System.out.println("Testing Q1_IsUnique");
         System.out.println("hello = " + Q1_IsUnique.isUnique("hello"));
         System.out.println("world = " + Q1_IsUnique.isUnique("world"));
@@ -29,7 +29,7 @@ public class Test {
     }
 
 
-    public static void testQ2() {
+    public static void testQ2_CheckPermutation() {
         System.out.println("Testing Q2_CheckPermutation");
         System.out.println("hello, oellh = " + Q2_CheckPermutation.isPermutation("hello", "oellh"));
         System.out.println("hello, world = " + Q2_CheckPermutation.isPermutation("hello", "world"));
@@ -41,14 +41,14 @@ public class Test {
     }
 
 
-    public static void testQ3() {
+    public static void testQ3_URLify() {
         System.out.println("Testing Q3_URLify");
         System.out.println(Q3_URLify.URLCreator("Mr John Smith    ", 13));
         System.out.println();
     }
 
 
-    public static void testQ4() {
+    public static void testQ4_PalindromePermutation() {
         System.out.println("Testing Q4_PalindromePermutation");
         System.out.println("tact coa = " + Q4_PalindromePermutation.hasPalindromePermutation("tact coa"));
         System.out.println("hello = " + Q4_PalindromePermutation.hasPalindromePermutation("hello"));
@@ -56,7 +56,7 @@ public class Test {
     }
 
 
-    public static void testQ5() {
+    public static void testQ5_OneAway() {
         System.out.println("Testing Q5_OneAway");
         System.out.println("pale, ple -> " + Q5_OneAway.oneAway("pale", "ple"));
         System.out.println("pales, pale -> " + Q5_OneAway.oneAway("pales", "pale"));
@@ -66,14 +66,14 @@ public class Test {
     }
 
 
-    public static void testQ6() {
+    public static void testQ6_StringCompression() {
         System.out.println("Testing Q6_StringCompression");
         System.out.println("aabcccccaaa" + " = " + Q6_StringCompression.compressed("aabcccccaaa"));
         System.out.println();
     }
 
 
-    public static void testQ7() {
+    public static void testQ7_Rotate_Matrix() {
         System.out.println("Testing Q7_Rotate_Matrix");
         int[][] matrix = new int[3][3];
         matrix[0] = new int[]{1, 2, 3};
@@ -89,7 +89,7 @@ public class Test {
     }
 
 
-    public static void testQ8() {
+    public static void testQ8_Zero_Matrix() {
         System.out.println("Testing Q8_Zero_Matrix");
         int[][] matrix = new int[3][3];
         matrix[0] = new int[]{1, 2, 3};
