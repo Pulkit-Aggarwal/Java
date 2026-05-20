@@ -15,7 +15,7 @@ public class Q3_DeleteMiddleNode {
 
     }
 
-    // bool approach that copies the node and then deletes the next one
+    // book approach that copies the node and then deletes the next one
     public boolean deleteNode2(LinkedListNode n) {
         if (n == null || n.next == null) {
             return false;

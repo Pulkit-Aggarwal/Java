@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class TestLinkedList {
+public class Test_LinkedList {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Testing LinkedList");

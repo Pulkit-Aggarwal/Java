@@ -2,8 +2,6 @@ package LinkedList;
 
 import java.util.HashSet;
 
-//TODO: Test this before you commit to github 
-
 public class Q1_RemoveDups {
 
    public static void removeDups(LinkedListNode n) {

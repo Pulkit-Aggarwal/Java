@@ -1,6 +1,6 @@
 package ArraysAndStrings;
 
-public class TestArraysAndStrings {
+public class Test_ArraysAndStrings {
 
     public static void main(String[] args) {
         System.out.println();
